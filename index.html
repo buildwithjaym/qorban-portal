@@ -3,285 +3,424 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/assets/img/qitacci_logo.jpg" type="image/png">
+  <link rel="icon" href="/assets/img/qitacci_logo.jpg" />
   <title>QITTACI Grade Portal Proposal</title>
+  <meta
+    name="description"
+    content="A modern grade portal proposal for Qorban Institute of Technology Training and Assessment Center, Inc. designed to simplify grade submission, improve student visibility, and support school administration."
+  />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar container">
-      <div class="brand">
-        <img src="/assets/img/qitacci_logo.jpg" alt="QITTACI Logo" class="logo" />
-        <div class="brand-text">
-          <h1>QITTACI</h1>
-          <p>Grade Portal Proposal</p>
-        </div>
-      </div>
+  <!-- Opening Intro Loader -->
+  <div id="introLoader" class="intro-loader">
+    <div class="intro-overlay"></div>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+    <div class="intro-content">
+      <img
+        src="/assets/img/qitacci_logo.jpg"
+        alt="QITTACI Logo"
+        class="intro-logo"
+      />
+      <p class="intro-label">QITTACI Grade Portal</p>
+      <h2 id="introText" class="intro-text">
+        Teachers spend too much time recording and encoding grades.
+      </h2>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container">
+      <a href="#top" class="brand" aria-label="QITTACI Grade Portal Proposal">
+        <img src="/assets/img/qitacci_logo.jpg" alt="QITTACI Logo" class="brand-logo" />
+        <div class="brand-copy">
+          <strong>QITTACI</strong>
+          <span>Grade Portal Proposal</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#problem">Problem</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#workflow">Workflow</a></li>
-      </ul>
+      <div class="nav-wrap" id="navWrap">
+        <ul class="nav-links">
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#datasets">Datasets</a></li>
+        </ul>
+        <a href="#proposal-summary" class="btn btn-nav">Why This Matters</a>
+      </div>
     </nav>
 
-    <div class="hero-content container">
-      <div class="hero-left reveal">
-        <span class="eyebrow">For Qorban Institute of Technology Training and Assessment Center, Inc.</span>
-        <h2>
-          A simpler and more organized way for <span>QITTACI</span> to manage and publish student grades.
-        </h2>
-        <p class="hero-description">
-          This proposed portal is designed to help QITTACI reduce manual grade handling, improve student transparency,
-          and give school administrators better visibility into the grade submission process.
-        </p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">A grade portal proposal for QITTACI</span>
+          <h1>
+            Bringing a clearer, faster, and more organized grading process to QITTACI.
+          </h1>
+          <p class="hero-text">
+            This proposal introduces a focused grade portal for
+            <strong>Qorban Institute of Technology Training and Assessment Center, Inc.</strong>
+            built to reduce manual work, improve grade visibility for students, and give school
+            administrators better oversight of the submission process.
+          </p>
 
-        <div class="hero-actions">
-          <a href="#solution" class="btn btn-primary">View Proposed Solution</a>
-          <a href="#benefits" class="btn btn-secondary">See School Benefits</a>
+          <div class="hero-actions">
+            <a href="#solution" class="btn btn-primary">See the Proposed Solution</a>
+            <a href="#datasets" class="btn btn-secondary">Review Required Data</a>
+          </div>
+
+          <div class="hero-points">
+            <div class="hero-point">
+              <span class="point-dot"></span>
+              <p>Less repetition for teachers</p>
+            </div>
+            <div class="hero-point">
+              <span class="point-dot"></span>
+              <p>More visibility for students</p>
+            </div>
+            <div class="hero-point">
+              <span class="point-dot"></span>
+              <p>Better monitoring for administrators</p>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-metrics">
-          <div class="metric-card float-card">
-            <strong>Less Repetition</strong>
-            <span>Reduce paper + Excel dependency</span>
-          </div>
-          <div class="metric-card float-card delay-1">
-            <strong>Faster Visibility</strong>
-            <span>Students can view grades earlier</span>
-          </div>
-          <div class="metric-card float-card delay-2">
-            <strong>Better Monitoring</strong>
-            <span>Admins can track submissions clearly</span>
+        <div class="hero-card-wrap reveal delay">
+          <div class="hero-card glass-card float-card">
+            <div class="mini-header">
+              <span class="mini-status"></span>
+              <p>QITTACI Digital Grade Portal</p>
+            </div>
+
+            <div class="dashboard-preview">
+              <div class="preview-card">
+                <h3>Current challenge</h3>
+                <ul>
+                  <li>Paper-based recording creates repeated work</li>
+                  <li>Excel-based encoding slows submission</li>
+                  <li>Students wait too long to see their grades</li>
+                  <li>Admin monitoring is harder than it should be</li>
+                </ul>
+              </div>
+
+              <div class="preview-card preview-card-accent">
+                <h3>Portal outcome</h3>
+                <ul>
+                  <li>Teachers upload grades in one place</li>
+                  <li>Students can view grades directly</li>
+                  <li>Admins can monitor submissions clearly</li>
+                  <li>The school gains a more organized workflow</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="hero-right reveal delay">
-        <div class="hero-panel">
-          <div class="panel-top">
-            <span class="status-dot"></span>
-            <p>QITTACI Portal Vision</p>
-          </div>
-
-          <div class="panel-card">
-            <h3>What we want to improve</h3>
-            <ul>
-              <li>Manual recording of grades on paper</li>
-              <li>Repeated transfer of records into Excel</li>
-              <li>Delayed release of grades to students</li>
-              <li>Limited admin visibility on submissions</li>
-            </ul>
-          </div>
-
-          <div class="panel-card accent">
-            <h3>What the portal will do</h3>
-            <ul>
-              <li>Teachers upload grades directly</li>
-              <li>Students view grades in one portal</li>
-              <li>Admins monitor submission status</li>
-              <li>School workflow becomes more organized</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-wave"></div>
+      <div class="hero-bg-shape shape-one"></div>
+      <div class="hero-bg-shape shape-two"></div>
+    </section>
   </header>
 
   <main>
-    <section id="problem" class="section">
+    <section class="section" id="problem">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">Current Situation</span>
-          <h2>The current grading process can become slow, repetitive, and difficult to monitor</h2>
+        <div class="section-head centered reveal">
+          <span class="section-label">The problem</span>
+          <h2>When grading depends on paper and spreadsheets, the process becomes slower, heavier, and harder to manage.</h2>
           <p>
-            If the current workflow relies on paper records and Excel files, teachers spend extra time encoding,
-            students wait longer to see results, and administrators have fewer tools to monitor the process.
+            The challenge is not only about technology. It is about time, accuracy, visibility, and
+            operational clarity. If teachers must repeat work across paper records and Excel files,
+            the grading process becomes more difficult than it needs to be.
           </p>
         </div>
 
-        <div class="card-grid three-col">
-          <article class="info-card reveal">
-            <div class="card-icon">01</div>
-            <h3>Repeated Teacher Work</h3>
+        <div class="grid-3">
+          <article class="feature-card reveal">
+            <div class="feature-icon">01</div>
+            <h3>Too much repeated work</h3>
             <p>
-              Teachers may record grades manually first, then re-encode them again in another format,
-              which adds unnecessary time and effort.
+              Teachers may record grades manually first, then transfer them again to another format.
+              This consumes time and adds unnecessary effort every grading period.
             </p>
           </article>
 
-          <article class="info-card reveal delay">
-            <div class="card-icon">02</div>
-            <h3>Delayed Student Access</h3>
+          <article class="feature-card reveal delay">
+            <div class="feature-icon">02</div>
+            <h3>Limited student visibility</h3>
             <p>
-              Students often only learn their standing later, instead of having timely visibility into
-              their academic performance.
+              Students often wait until much later to know their academic standing, instead of seeing
+              their grades as soon as they are available.
             </p>
           </article>
 
-          <article class="info-card reveal delay-2">
-            <div class="card-icon">03</div>
-            <h3>Limited Monitoring</h3>
+          <article class="feature-card reveal delay-2">
+            <div class="feature-icon">03</div>
+            <h3>Harder admin follow-up</h3>
             <p>
-              Admins may find it harder to track who has already submitted grades and which classes still need follow-up.
+              Without a centralized portal, administrators may spend more effort checking who has
+              submitted grades and which classes still need attention.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="solution" class="section section-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">Proposed Solution</span>
-          <h2>A focused grade portal built around the actual needs of QITTACI</h2>
+    <section class="section section-soft" id="solution">
+      <div class="container split-layout">
+        <div class="split-copy reveal">
+          <span class="section-label">The solution</span>
+          <h2>A focused portal designed around the real workflow of QITTACI.</h2>
           <p>
-            The MVP is intentionally simple. It focuses on one important school need:
-            teachers upload grades, students view them directly, and admins monitor the process.
+            The first version of this portal is intentionally simple. It focuses on one high-value
+            workflow: <strong>teachers upload grades, students view them directly, and administrators
+            monitor progress.</strong>
+          </p>
+          <p>
+            By keeping the MVP focused, the school gets a practical system that solves a real
+            operational problem without adding unnecessary complexity.
           </p>
         </div>
 
-        <div class="role-layout">
+        <div class="split-cards">
           <div class="role-card reveal">
-            <div class="role-badge teacher">Teacher</div>
-            <h3>Grade Uploading</h3>
+            <span class="role-badge teacher">Teacher</span>
+            <h3>Upload grades with less friction</h3>
             <p>
-              Teachers will only access their assigned subjects and sections, making grade submission cleaner and more secure.
+              Teachers access only their assigned subjects and sections, making grade entry cleaner,
+              faster, and more secure.
             </p>
           </div>
 
           <div class="role-card reveal delay">
-            <div class="role-badge student">Student</div>
-            <h3>Grade Visibility</h3>
+            <span class="role-badge student">Student</span>
+            <h3>See grades with more transparency</h3>
             <p>
-              Students can log in and directly view uploaded grades, giving them better awareness of their academic progress.
+              Students can log in and directly view their uploaded grades, giving them better
+              awareness of their academic standing.
             </p>
           </div>
 
           <div class="role-card reveal delay-2">
-            <div class="role-badge admin">Admin</div>
-            <h3>Submission Monitoring</h3>
+            <span class="role-badge admin">Admin</span>
+            <h3>Monitor the process with clarity</h3>
             <p>
-              Admins can monitor grade submissions and portal activity without changing teacher-submitted grades.
+              Administrators gain a clear view of submission progress without interfering with
+              teacher-entered grade records.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="benefits" class="section">
+    <section class="section" id="benefits">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">Why It Matters</span>
-          <h2>How this portal can help QITTACI</h2>
+        <div class="section-head reveal">
+          <span class="section-label">Why this helps</span>
+          <h2>What QITTACI gains from this portal</h2>
+          <p>
+            This proposal is not just about making a website. It is about improving the grading
+            workflow in a way that supports teachers, students, and school administration.
+          </p>
         </div>
 
-        <div class="benefit-grid">
+        <div class="grid-2">
           <div class="benefit-card reveal">
-            <h3>More efficient grading workflow</h3>
+            <h3>Reduced manual workload</h3>
             <p>
-              Reduce unnecessary repetition by giving teachers one place to submit grades.
+              Teachers spend less time repeating the same work across paper and Excel-based processes.
             </p>
           </div>
 
           <div class="benefit-card reveal delay">
-            <h3>More transparent academic records</h3>
+            <h3>Faster academic visibility</h3>
             <p>
-              Students can access grades more directly instead of waiting only for end-period release.
-            </p>
-          </div>
-
-          <div class="benefit-card reveal delay-2">
-            <h3>Better administrative oversight</h3>
-            <p>
-              The school can better monitor grade submission progress and encourage timely completion.
+              Students can access grades sooner, creating more transparency around performance.
             </p>
           </div>
 
           <div class="benefit-card reveal">
-            <h3>Supports digital transformation</h3>
+            <h3>Clearer administrative tracking</h3>
             <p>
-              This is a practical first step toward a more organized and modern school process.
+              The school can monitor submission status more effectively and follow up with better timing.
+            </p>
+          </div>
+
+          <div class="benefit-card reveal delay">
+            <h3>A strong first step toward digital operations</h3>
+            <p>
+              The portal serves as a practical move toward a more organized and modern school process.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="workflow" class="section section-alt">
+    <section class="section section-soft" id="workflow">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">Workflow</span>
-          <h2>How the proposed portal will work</h2>
+        <div class="section-head centered reveal">
+          <span class="section-label">How it works</span>
+          <h2>A simple workflow that matches the MVP</h2>
+          <p>
+            The portal is designed to be easy to understand, easy to use, and aligned with the
+            school’s immediate needs.
+          </p>
         </div>
 
         <div class="timeline">
           <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>1. Teacher logs in</h3>
-              <p>Each teacher accesses only the subjects and sections assigned to them.</p>
+            <div class="timeline-number">1</div>
+            <div class="timeline-body">
+              <h3>Teacher logs in</h3>
+              <p>
+                The teacher sees only the subjects and sections assigned to them.
+              </p>
             </div>
           </div>
 
           <div class="timeline-item reveal delay">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>2. Teacher uploads grades</h3>
-              <p>Grades are entered directly into the portal instead of depending only on manual processes.</p>
+            <div class="timeline-number">2</div>
+            <div class="timeline-body">
+              <h3>Teacher uploads grades</h3>
+              <p>
+                Grades are entered directly into the portal instead of relying only on manual methods.
+              </p>
             </div>
           </div>
 
           <div class="timeline-item reveal delay-2">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>3. Students view grades</h3>
-              <p>Students can check their grades directly after the teacher uploads them.</p>
+            <div class="timeline-number">3</div>
+            <div class="timeline-body">
+              <h3>Students view grades</h3>
+              <p>
+                Students can access their uploaded grades directly from their account.
+              </p>
             </div>
           </div>
 
           <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>4. Admin monitors progress</h3>
-              <p>Admins can see which submissions are done and which require follow-up.</p>
+            <div class="timeline-number">4</div>
+            <div class="timeline-body">
+              <h3>Admin monitors submissions</h3>
+              <p>
+                School administration can track overall submission activity and workflow progress.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section cta-section">
+    <section class="section" id="datasets">
       <div class="container">
-        <div class="cta-card reveal">
-          <span class="section-tag">Proposal Summary</span>
-          <h2>A practical portal proposal for QITTACI</h2>
+        <div class="section-head reveal">
+          <span class="section-label">Required datasets</span>
+          <h2>Data needed to initialize the portal for QITTACI</h2>
           <p>
-            This portal is designed not to add complexity, but to solve a real operational problem:
-            making grade submission simpler, grade viewing more transparent, and monitoring easier for the school.
+            To launch the portal correctly, the school only needs a small set of core records.
+            These datasets will allow the system to organize users, subjects, assignments, and grades accurately.
           </p>
-          <a href="#problem" class="btn btn-primary">Review the Proposal</a>
+        </div>
+
+        <div class="dataset-grid">
+          <div class="dataset-card reveal">
+            <h3>Student list</h3>
+            <p>Student ID, full name, grade level, and section.</p>
+          </div>
+
+          <div class="dataset-card reveal delay">
+            <h3>Teacher list</h3>
+            <p>Teacher ID, full name, and basic account details.</p>
+          </div>
+
+          <div class="dataset-card reveal delay-2">
+            <h3>Subjects offered</h3>
+            <p>The complete list of subjects handled by the school.</p>
+          </div>
+
+          <div class="dataset-card reveal">
+            <h3>Sections and classes</h3>
+            <p>Grade level and section structure for enrolled students.</p>
+          </div>
+
+          <div class="dataset-card reveal delay">
+            <h3>Teacher assignments</h3>
+            <p>Which teacher handles which subject and section.</p>
+          </div>
+
+          <div class="dataset-card reveal delay-2">
+            <h3>Grading periods</h3>
+            <p>The grading structure used by the school, such as quarters or terms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta" id="proposal-summary">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <span class="section-label light-label">Proposal summary</span>
+          <h2>A practical portal proposal built to solve a real school process.</h2>
+          <p>
+            This grade portal is designed to make the grading workflow more efficient, improve
+            transparency for students, and support better monitoring for QITTACI administrators.
+            It is not about adding complexity. It is about removing friction from an important school process.
+          </p>
+          <div class="cta-actions">
+            <a href="#top" class="btn btn-light">Back to Top</a>
+            <a href="#datasets" class="btn btn-outline-light">View Required Data</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <h3>QITTACI Grade Portal Proposal</h3>
-        <p>Prepared to present a more organized grading workflow for Qorban Institute of Technology Training and Assessment Center, Inc.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <img src="/assets/img/qitacci_logo.jpg" alt="QITTACI Logo" class="footer-logo" />
+          <div>
+            <h3>QITTACI Grade Portal Proposal</h3>
+            <p>Prepared for Qorban Institute of Technology Training and Assessment Center, Inc.</p>
+          </div>
+        </div>
+        <p class="footer-description">
+          A focused proposal for improving grade submission, student visibility, and administrative monitoring through a simple and modern school portal.
+        </p>
       </div>
-      <p class="footer-note">Focused on solving real school workflow problems.</p>
+
+      <div class="footer-links">
+        <h4>Proposal Sections</h4>
+        <ul>
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#solution">The Solution</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#datasets">Required Datasets</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-note-box">
+        <h4>Core Message</h4>
+        <p>
+          The goal is simple: make grade handling easier for teachers, clearer for students, and more manageable for school administration.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>QITTACI Grade Portal Proposal</p>
+        <p>Designed to support a more organized academic workflow.</p>
+      </div>
     </div>
   </footer>
 
